@@ -2,6 +2,7 @@ import { header } from "./header.js";
 import { start } from "./start.js";
 import { menu } from "./menu.js";
 import { about } from "./about.js";
+import "./style.css";
 
 const container = document.querySelector(".container");
 
