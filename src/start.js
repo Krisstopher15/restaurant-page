@@ -1,8 +1,9 @@
+import { pizza } from "./img/pizza.jpg";
+
 function start() {
   const home = document.createElement("div");
-
-  const homeImg = new Image();
-  homeImg.src = "./img/pizza.jpg";
+  const homeImg = document.createElement("img");
+  homeImg.src = "./img/pizza";
   home.appendChild(homeImg);
 
   home.classList.add("home");
