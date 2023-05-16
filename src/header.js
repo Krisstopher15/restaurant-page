@@ -1,4 +1,4 @@
-function Header() {
+function header() {
   const nav = document.createElement("nav");
   const btnStart = document.createElement("button");
   const btnMenu = document.createElement("button");
@@ -10,6 +10,7 @@ function Header() {
 
   btnMenu.setAttribute("id", "btn-menu");
   btnStart.setAttribute("id", "btn-start");
+  btnAbout.setAttribute("id", "btn-about");
 
   nav.appendChild(btnStart);
   nav.appendChild(btnMenu);
@@ -18,4 +19,4 @@ function Header() {
   return nav;
 }
 
-export { Header };
+export { header };

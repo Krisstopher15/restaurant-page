@@ -1,17 +1,21 @@
-import { Header } from "./header.js";
+import { header } from "./header.js";
 import { start } from "./start.js";
 import { menu } from "./menu.js";
+import { about } from "./about.js";
 
 const container = document.querySelector(".container");
 
-container.appendChild(Header());
+container.appendChild(header());
 container.appendChild(start());
 
 document.getElementById("btn-start").addEventListener("click", () => {
-  container.replaceChild(start(), document.querySelector(".menu"));
+  container.replaceChild(start(), container.lastChild);
 });
 
 document.getElementById("btn-menu").addEventListener("click", () => {
-  console.log("Hola");
-  container.replaceChild(menu(), document.querySelector(".home"));
+  container.replaceChild(menu(), container.lastChild);
+});
+
+document.getElementById("btn-about").addEventListener("click", () => {
+  container.replaceChild(about(), container.lastChild);
 });

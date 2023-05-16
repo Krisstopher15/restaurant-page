@@ -11,6 +11,10 @@ function menu() {
     const desc = document.createElement("p");
     const price = document.createElement("p");
 
+    foodName.classList.add("food-name");
+    desc.classList.add("food-desc");
+    price.classList.add("food-price");
+
     foodName.textContent = food.name;
     desc.textContent = food.description;
     price.textContent = food.price;
